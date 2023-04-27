@@ -1,0 +1,17 @@
+### Task読み取り
+GET http://localhost:8080/
+
+### Task作成
+POST  http://localhost:8080/todo/insert/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "test",
+    "description": "test"
+}
+
+### Taskの状態更新
+GET  http://localhost:8080/todo/toggle/{id}
+
+### Task削除
+GET  http://localhost:8080/todo/delete/{id}
